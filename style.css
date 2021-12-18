@@ -1,0 +1,199 @@
+* {                         /*Common selector that clears browser defaults to prevent inconsistencies*/
+    margin: 0;                      /*Sets zero margin all around*/
+    padding: 0;                     
+    box-sizing: border-box;         /*Padding and border are included in elements total width and height, and makes box elements same size*/
+  }
+
+
+.header {
+    padding: 15px;          
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif'; /*Account for numerous fonts as a backup depending if a browser might not support the initial font*/
+    background-color: #2a607c;
+    color: #ffffff;
+    width: 100%;          /*the header's width spans the entire horizontal webpage*/
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header h1 {
+    display: inline-block;    /*Allows for the text in the h1 tag of the header to display on the same line horizontally*/
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header div {
+    padding-top: 15px;              /*Will allow 15 pixels of padding surrounding the div box in the header*/
+    margin-right: 20px;             /*Will allow 20 pixels of margin on the right side surrounding the div box in the header*/
+    float: right;                   /*Positions the div box in the header to the right of the webpage*/
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-size: 20px;                
+}
+
+.header div ul {
+    list-style-type: none;          /*Removes the default bullet point style for the contents in the div box for the header*/
+}
+
+.header div ul li {
+    display: inline-block;        /*Allows for the list items in the unordered list of the header to display on the same line horizontally*/
+    margin-left: 25px;
+    color: white;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;    /*links will display with no underline or ugly blue text*/
+}
+
+.hero {                         
+    height: 800px;        /*picture height of 800 pixels*/
+    width: 100%;           /*picture spans the entire width of the page*/
+    margin-bottom: 25px;
+    background-image: url("./images2/digital-marketing-meeting.jpg");
+    background-size: cover;             /*covers the entire div tag for the webpage*/
+    background-position: center;        /*centers the picture to allow for the table and hands to show*/
+}
+
+.float-left {           
+    float: left;               /*positions the picture to the left of its respective div tag*/
+    margin-right: 25px;         /*Adds a margin of 25 pixels to the right of the picture so the paragraph is not too close*/
+}
+
+.float-right {
+    float: right;           /*positions the picture to the right of its respective div tag*/
+    margin-left: 25px;      /*Adds a margin of 25 pixels to the left of the picture so the paragraph is not too close*/
+}
+
+.content {
+    width: 75%;
+    display: inline-block;      /*displays the picture and paragraph description on the same line*/
+    margin-left: 20px;
+}
+
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;            /*benefits element is pushed below all floated elements*/
+    float: right;           /*Floats element to the right of the screen*/
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    background-color: #2589bd;
+}
+
+.benefit-lead {
+    margin-bottom: 32px;       /*Adds a 32 pixel margin on the bottom section of benefits-lead*/
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;    
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;         /*displays the image as a block element. Starts on a new line and takes the whole width */
+    margin: 10px auto;      /*10 pixels of margin added horizontally and auto represents the browser selecting a suitable margin to use in the vertical*/
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;         /*total vertical height of 200 pixels*/
+}
+
+.search-engine-optimization h2 {
+    margin-bottom: 20px;       /*added 20 pixels of margin to the bottom of the contents in the h2 tag for SEO*/
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
